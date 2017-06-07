@@ -42,6 +42,8 @@ namespace BottomBar.Droid.Renderers
 		FrameLayout _frameLayout;
 		IPageController _pageController;
 
+	    public BottomNavigationBar.BottomBar BottomBar => _bottomBar;
+
 		public BottomBarPageRenderer ()
 		{
 			AutoPackage = false;
