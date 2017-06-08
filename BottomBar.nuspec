@@ -19,13 +19,13 @@
   </metadata>
   <files>
      <!-- portable -->
-    <file src="BottomBar.XamarinForms\bin\Release\BottomBar.XamarinForms.dll"  target="lib\portable-net45+win8+wpa81\BottomBar.XamarinForms.dll" />
+    <file src="BottomBar.XamarinForms\bin\Release\netstandard1.4\LH.BottomBar.XamarinForms.dll"  target="lib\netstandard1.4\LH.BottomBar.XamarinForms.dll" />
 
      <!-- android -->
     <file src="BottomBar.Droid\bin\Release\BottomBar.Droid.dll" target="lib\MonoAndroid10\BottomBar.Droid.dll" />
-    <file src="BottomBar.XamarinForms\bin\Release\BottomBar.XamarinForms.dll"  target="lib\MonoAndroid10\BottomBar.XamarinForms.dll" />
+    <file src="BottomBar.XamarinForms\bin\Release\netstandard1.4\LH.BottomBar.XamarinForms.dll"  target="lib\MonoAndroid10\LH.BottomBar.XamarinForms.dll" />
 
     <!-- iOSUnified -->
-    <file src="BottomBar.XamarinForms\bin\Release\BottomBar.XamarinForms.dll"  target="lib\Xamarin.iOS10\BottomBar.XamarinForms.dll" />
+    <file src="BottomBar.XamarinForms\bin\Release\netstandard1.4\LH.BottomBar.XamarinForms.dll"  target="lib\Xamarin.iOS10\LH.BottomBar.XamarinForms.dll" />
 </files>
 </package>
