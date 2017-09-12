@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- https://bugzilla.xamarin.com/show_bug.cgi?id=55591 -->
+    <None Remove="**\*.xaml" />
+
+    <Compile Update="**\*.xaml.cs" DependentUpon="%(Filename)" />
+    <EmbeddedResource Include="**\*.xaml" SubType="Designer" Generator="MSBuild:UpdateDesignTimeXaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="2.4.0.269-pre2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BottomBar.XamarinForms.NetStandard\BottomBar.XamarinForms.NetStandard.csproj" />
+  </ItemGroup>
+
+</Project>
