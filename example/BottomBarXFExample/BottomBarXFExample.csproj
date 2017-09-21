@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="**\*.xaml.cs" DependentUpon="%(Filename)" />
+  </ItemGroup>
+ 
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="2.4.0.275-pre3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BottomBar.XamarinForms\BottomBar.XamarinForms.csproj" />
+  </ItemGroup>
+
+
+  
+</Project>
