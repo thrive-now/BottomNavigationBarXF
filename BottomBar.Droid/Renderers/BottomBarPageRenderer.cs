@@ -44,6 +44,8 @@ namespace BottomBar.Droid.Renderers
 		IPageController _pageController;
 	    IDictionary<Page, BottomBarBadge> _badges;
 
+	    public BottomNavigationBar.BottomBar BottomBar => _bottomBar;
+
 		public BottomBarPageRenderer ()
 		{
 			AutoPackage = false;
